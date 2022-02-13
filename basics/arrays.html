@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+
+        function getIndex(arr) {
+            let a = 0;
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] < arr[a]) a = i;
+                    }
+            return a;
+        }
+
+        function getMax(arr) {
+            let max = arr[0][0];
+            for (let i = 1; i < arr.length; i++){
+                for (let j = 1; j < arr[i].length; j++){
+                    if (arr[i][j] > max) max = arr[i][j];
+                }
+            }
+            return max;
+        }
+
+        let arr = [2, 68, 756, 71, 55, 56, 8, 789, 468, 0];
+        console.log(getIndex(arr));
+
+        arr = [[568, 68, 6], [632, 9, 30], [581, 786, -3]];
+        console.log(getMax(arr));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
