@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let rectangle = {
+            x: 5,
+            y: 7,
+            height: 10,
+            width: 15
+        }
+
+        function getProperties(object) {
+            for (let field in object) {
+                console.log(`Поле ${field} равно ${object[field]}`);
+            }
+        }
+
+        getProperties(rectangle);
+
+        rectangle.x = 10;
+        rectangle.y = 12;
+        rectangle.height = 75;
+        rectangle.width = 95;
+        getProperties(rectangle);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
