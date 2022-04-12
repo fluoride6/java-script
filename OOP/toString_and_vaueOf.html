@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function Rectangle(x, y, height, width) {
+            this.x = x;
+            this.y = y;
+            this.height = height;
+            this.width = width;
+
+            this.toString = function () {
+                return `Прямоугольник с координатами ${this.x} и ${this.y}, шириной ${this.width} и высотой ${this.height}`;
+            }
+
+            this.valueOf = function (){
+                return this.height * this.width;
+            }
+        }
+
+        let rectangle = new Rectangle(10, 8, 13, 15);
+        alert(rectangle);
+        alert(Number(rectangle));
+    </script>
+</head>
+<body>
+</body>
+</html>

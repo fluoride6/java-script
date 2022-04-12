@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        class Rectangle {
+            constructor(x, y, h, w) {
+                this.x = x;
+                this.y = y;
+                this.h = h;
+                this.w = w;
+            }
+
+            getSquare() {
+                return this.h * this.w;
+            }
+
+            getInfo() {
+                return `Прямоугольник с координатами ${this.x} и ${this.y}, шириной ${this.w} и высотой ${this.h}`;
+            }
+        }
+
+        let abcd = new Rectangle(5, 10, 15, 13);
+        console.log(abcd);
+        console.log(abcd.getInfo());
+        console.log(abcd.getSquare());
+    </script>
+</head>
+<body>
+
+</body>
+</html>
