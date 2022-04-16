@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        class Car {
+
+            constructor(x, y, speed) {
+                this.x = x;
+                this.y = y;
+                this.speed = speed;
+            }
+
+            moving(x, y) {
+                this.x = x;
+                this.y = y;
+                console.log('Двигаемся на автомобиле');
+            }
+        }
+
+        class Ferrari extends Car {
+
+            constructor(x, y, speed, weight) {
+                super(x, y, speed);
+                this.weight = weight;
+            }
+
+            moving(x, y) {
+                this.x = x;
+                this.y = y;
+                console.log('Двигаемся на Ferrari');
+            }
+        }
+
+        let car = new Car(10, 15, 80);
+        let ferrari = new Ferrari(1, 5, 90, 1000);
+        console.log(car);
+        car.moving();
+        console.log(ferrari);
+        ferrari.moving();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        class Rectangle {
+
+            static counter = 0;
+
+            constructor(x, y, h, w) {
+                this.x = x;
+                this.y = y;
+                this.h = h;
+                this.w = w;
+                Rectangle.counter++;
+            }
+
+            static getCounter() {
+                return Rectangle.counter;
+            }
+
+        }
+
+        let abcd = new Rectangle(5, 10, 15, 13);
+        let absb = new Rectangle(3, 1, 11, 8);
+        let abcn = new Rectangle(1, 1, 1, 2);
+        console.log(Rectangle.getCounter());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
