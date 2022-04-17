@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        class Rectangle {
+            constructor(x, y, h, w) {
+                this.x = x;
+                this.y = y;
+                this.h = h;
+                this.w = w;
+            }
+        }
+
+        let abcd = new Rectangle(8, 2, 15, 4);
+        for (let i in abcd) {
+            console.log(Object.getOwnPropertyDescriptor(abcd, i));
+            Object.defineProperty(abcd, i, {
+                writable: false,
+                enumerable: true,
+                configurable: false
+            });
+        }
+
+        //abcd.x = 10;
+        //delete abcd.x;
+    </script>
+</head>
+<body>
+
+</body>
+</html>

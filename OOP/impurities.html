@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let a = {
+            getRandom() {
+                return Math.random() * 100;
+            }
+        }
+
+        class Rectangle {
+            constructor(x, y, h, w) {
+                if (this.x === undefined) this.x = this.getRandom();
+                else this.x = x;
+                if (this.y === undefined) this.y = this.getRandom();
+                else this.y = y;
+                if (this.h === undefined) this.h = this.getRandom();
+                else this.h = h;
+                if (this.w === undefined) this.w = this.getRandom();
+                else this.w = w;
+            }
+        }
+
+        Object.assign(Rectangle.prototype, a);
+
+        let a1 = new Rectangle();
+        console.log(a1);
+        let a2 = new Rectangle();
+        console.log(a2);
+        let a3 = new Rectangle();
+        console.log(a3);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

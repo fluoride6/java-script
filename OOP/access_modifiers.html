@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        class Rectangle {
+            constructor(x, y, h, w) {
+                this.x = x;
+                this.y = y;
+                this._h = h;
+                this._w = w;
+            }
+
+            square() {
+                return this._h * this._w;
+            }
+
+            getH() {
+                return this._h;
+            }
+
+            getW() {
+                return this._w;
+            }
+
+            setH(h) {
+                if (this.check(h)) this._h = h;
+            }
+
+            setW(w) {
+                if (this.check(w)) this._w = w;
+            }
+
+            check(a) {
+                return a > 0;
+            }
+
+            valueOf() {
+                return this.square();
+            }
+
+            toString() {
+                return `Прямоугольник с координатами ${this.x} и ${this.y}, шириной ${this.width} и высотой ${this.height}`;
+            }
+        }
+
+        let abcd = new Rectangle(10, 8, 15, 20);
+        console.log(abcd.getW());
+        console.log(abcd.getH());
+        abcd.setW(-2);
+        abcd.setH(-5);
+        console.log(abcd.getW());
+        console.log(abcd.getH());
+    </script>
+</head>
+<body>
+
+</body>
+</html>
