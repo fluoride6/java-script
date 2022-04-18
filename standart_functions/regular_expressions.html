@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let login = prompt('Введите логин:');
+        let a = /[a-zа-яё0-9]{3,32}/;
+        if (login.match(a)) console.log('Логин корректный');
+        else console.log('Логин некорректный');
+    </script>
+</head>
+<body>
+
+</body>
+</html>
