@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let a = Math.round(5 + Math.random() * 10);
+        //console.log(a);
+        let arr = [];
+        for (let i = 0; i < a; i++) {
+            arr.push(Math.ceil(Math.random() * 100));
+        }
+        console.log(arr);
+
+        arr.sort(function (a1, a2) {
+            return a2 - a1;
+        });
+
+        console.log(arr);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
