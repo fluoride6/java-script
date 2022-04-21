@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let m = new Map();
+        m.set('wood', 'дерево');
+        m.set('choice', 'выбор');
+        m.set('good', 'хорошо');
+        m.set('length', 'длина');
+        for (let entry of m) {
+            console.log(`Ключ ${entry[0]} и значение ${entry[1]}`);
+        }
+
+        let a = prompt('Введите два слова через запятую: английское и его русский перевод:');
+        let [key, value] = a.split(', ');
+        m.set(key, value);
+
+        console.log(m);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

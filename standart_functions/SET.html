@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let s = new Set();
+        for (let i = 0; i < 100; i++) {
+            s.add(Math.ceil(Math.random() * 10));
+        }
+        for (let v of s) console.log(v);
+        console.log(`Длина Set равна ${s.size} элементов`);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
