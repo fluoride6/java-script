@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let date = new Date();
+        let startYear = new Date(date.getFullYear(), 0, 1, 0, 0, 0);
+        let sec = (date.getTime() - startYear.getTime()) / 1000;
+        let min = sec / 60;
+        let h = min / 60;
+        let d = h / 24;
+
+        let m = new Map();
+        m.set('seconds', sec);
+        m.set('minutes', min);
+        m.set('hours', h);
+        m.set('days', d);
+
+        for (entry of m)
+            console.log(`Ключ ${entry[0]} и значение ${entry[1]}`);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
