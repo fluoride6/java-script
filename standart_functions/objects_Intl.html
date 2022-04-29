@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var collator = new Intl.Collator();
+        var arr = ['ёж', 'яблоко', 'клён', 'стол', 'ананас'];
+
+        console.log(arr.sort());
+
+        console.log(arr.sort(
+            function (i1, i2){
+                return collator.compare(i1, i2);
+            }
+        ));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
