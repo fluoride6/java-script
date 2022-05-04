@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>hgoe</p>
+<p>gegehu</p>
+<p>fwkpowk</p>
+
+<script>
+    let a = "Удалено пользователем";
+
+    function handler(event) {
+        let target = event.target;
+        if (target.innerHTML == a) target.remove();
+        else target.innerHTML = a;
+    }
+
+    let elems = document.querySelectorAll('p');
+    for (let e of elems) e.addEventListener('click', handler);
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function (event) {
+            let elems = document.querySelectorAll('a');
+            for (let a of elems) a.addEventListener('click', click);
+        });
+
+        function click(event) {
+           event.preventDefault();
+        }
+    </script>
+</head>
+<body>
+<a href="basic_events.html">link 1</a>
+<a href="basic_events.html">link 2</a>
+<a href="basic_events.html">link 3</a>
+</body>
+</html>
