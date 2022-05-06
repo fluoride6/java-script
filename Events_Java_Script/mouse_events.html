@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    function mouseover(event){
+        let p = document.createElement('p');
+        p.innerHTML = 'gegege';
+        event.target.append(p);
+    }
+
+    function mouseout(event){
+        event.target.querySelector('p').remove();
+    }
+
+    function mousedown(event){
+        if (event.button == '0') event.target.querySelector('p').style.fontWeight = 'bold';
+    }
+
+    function mouseup(event){
+        if (event.button == '0') event.target.querySelector('p').style.fontWeight = 'normal';
+    }
+
+    document.addEventListener('DOMContentLoaded', function (event){
+        let div = document.querySelector('div');
+        div.addEventListener('mouseover', mouseover);
+        div.addEventListener('mouseout', mouseout);
+        div.addEventListener('mousedown', mousedown);
+        div.addEventListener('mouseup', mouseup);
+    });
+</script>
+<body>
+<div style="text-align: center; border: 2px solid; height: 200px"></div>
+</body>
+</html>
